@@ -1,22 +1,35 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    display: block;
-    margin: 20px auto 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(80px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #0066cc;
 }
 
 h1 {
@@ -25,6 +38,7 @@ h1 {
     color: #333;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     animation: float 3s ease-in-out infinite;
+    margin: 0;
 }
 
 @keyframes float {
