@@ -10,5 +10,8 @@
     "test"
   ],
   "author": "Levi Josué Candeias de Figueiredo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^11.26.24"
+  }
 }
