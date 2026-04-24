@@ -13,6 +13,7 @@
   "author": "Levi Josué Candeias de Figueiredo",
   "license": "ISC",
   "dependencies": {
+    "express": "^5.2.1",
     "sweetalert2": "^11.26.24"
   }
 }

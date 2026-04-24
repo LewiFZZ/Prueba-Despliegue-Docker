@@ -1,18 +1,6 @@
-function showMessage() {
-    Swal.fire({
-        title: 'Esta aplicación es super compleja',
-        text: '(creeme)',
-        icon: 'info'
-    });
-}
+const express = require('express');
+const app = express();
 
-if (typeof document !== 'undefined') {
-    const button = document.querySelector('button');
-    if (button) {
-        button.addEventListener('click', function () {
-            showMessage();
-        });
-    } else {
-        console.log("ERROR: No se ha encontrado boton");
-    }
-}
+app.use(express.static('.'));
+
+app.listen(3000, () => console.log('Corriendo en http://localhost:3000'));
