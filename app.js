@@ -6,11 +6,13 @@ function showMessage() {
     });
 }
 
-const button = document.querySelector('button');
-if (button) {
-    button.addEventListener('click', function () {
-        showMessage();
-    });
-} else {
-    console.log("ERROR: No se ha encontrado boton");
+if (typeof document !== 'undefined') {
+    const button = document.querySelector('button');
+    if (button) {
+        button.addEventListener('click', function () {
+            showMessage();
+        });
+    } else {
+        console.log("ERROR: No se ha encontrado boton");
+    }
 }
